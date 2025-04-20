@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eskilstuna Hospital Kiosk</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <img src="https://cdn-icons-png.flaticon.com/512/2965/2965567.png" alt="Hospital Logo" class="logo" />
+    <h1 id="welcomeText">Welcome to Eskilstuna Hospital. Please choose your language and enter your personal number to proceed.</h1>
+    <p class="subtitle">A Friendly Check-In System for Everyone</p>
+
+    <div class="form-group">
+      <label for="language">Choose Language:</label>
+      <select id="language">
+        <option value="en">English</option>
+        <option value="sv">Svenska</option>
+        <option value="fa">فارسی</option>
+        <option value="ar">العربية</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="personalNumber">Enter Your Personal Number:</label>
+      <input type="text" id="personalNumber" placeholder="e.g. 123456" />
+    </div>
+
+    <button onclick="checkAppointment()">Check Appointment</button>
+    <button onclick="playVoice()" class="voice-btn">🔊 Voice Assist</button>
+  </div>
+</body>
+</html>
